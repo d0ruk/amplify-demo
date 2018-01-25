@@ -1,0 +1,22 @@
+{
+	"ProjectName": "amplify-demo",
+	"ProjectPath": "/home/d/JS/amplify-demo",
+	"SourceDir": "src",
+	"DistributionDir": "build",
+	"BuildCommand": "npm run-script build",
+	"StartCommand": "npm run-script start",
+	"InitializationTime": "2018-01-24-22-24-32",
+	"LastConfigurationTime": "2018-01-24-22-24-44",
+	"LastNPMInstallTime": "2018-01-26-00-40-11",
+	"FrontendLastBuildTime": "2018-01-26-00-40-15",
+	"LastPublishTime": "2018-01-26-00-41-03",
+	"BackendFormat": "yml",
+	"BackendLastBuildTime": "2018-01-26-00-39-56",
+	"BackendLastUpdateTime": "2018-01-26-00-40-01",
+	"BackendLastUpdateSuccessful": true,
+	"BackendProjectID": "8da701f2-ef27-4c8e-b463-7cb6d2a2838a",
+	"BackendProjectName": "amplify-demo-2018-01-24-22-24-44",
+	"BackendProjectConsoleUrl": "https://console.aws.amazon.com/mobilehub/home#/8da701f2-ef27-4c8e-b463-7cb6d2a2838a/build",
+	"BackendProjectCreationTime": "2018-01-24T19:25:01.544Z",
+	"BackendProjectLastUpdatedTime": "2018-01-25T21:39:58.639Z"
+}

@@ -1,0 +1,9 @@
+node_modules
+build
+.DS_Store
+.env.*
+*.log*
+
+#awsmobilejs
+awsmobilejs/.awsmobile/backend-build
+awsmobilejs/\#current-backend-info
