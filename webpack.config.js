@@ -27,12 +27,14 @@ module.exports = env => {
           // compress: false,
         },
         sourceMap: true,
-      })]
+      }),
+      new webpack.optimize.ModuleConcatenationPlugin()
+    ]
     : [new webpack.HotModuleReplacementPlugin(),
       /*new Jarvis({ port: 8081 })*/];
   
   return {
-    entry: resolve("src"),
+    entry: [resolve("src")],
     output: {
       filename: "[name].[hash:7].js",
       path: DIST_PATH
@@ -54,7 +56,9 @@ module.exports = env => {
               ],
               plugins: [
                 "@babel/transform-runtime",
-                "@babel/plugin-proposal-class-properties"
+                "@babel/plugin-proposal-class-properties",
+                "@babel/plugin-proposal-object-rest-spread",
+                "@babel/plugin-syntax-async-generators"
               ]
             }
           }
@@ -66,7 +70,10 @@ module.exports = env => {
         title: name,
         template: resolve(SRC_PATH, "index.html")
       }),
-      new webpack.NamedModulesPlugin()
+      new webpack.NamedModulesPlugin(),
+      new webpack.DefinePlugin({
+        "process.env.NODE_ENV": JSON.stringify(isProd ? "production" : "development")
+      }),
     ].concat(toAppend),
     resolve: {
       extensions: [".js", ".json", ".jsx"],
@@ -78,7 +85,8 @@ module.exports = env => {
     devServer: {
       hot: true,
       compress: true,
-      // noInfo: true,
+      historyApiFallback: true,
+      stats: { modules: false },
       overlay: true
     },
     stats: {

@@ -1,12 +1,12 @@
 import React, { Component, Fragment } from "react"
 import { withAuthenticator } from "aws-amplify-react"
-import { Portal } from "react-portal"
+import { Route, Switch, Link } from "react-router-dom"
 
-import { mediaObjectShape } from "./util"
-import Header from "./components/Header"
-import Main from "./components/Main"
-import Footer from "./components/Footer"
-import Loader from "./components/Loader"
+import { mediaObjectShape } from "~/util"
+import Header from "~/components/Header"
+import Main from "~/components/Main"
+import Footer from "~/components/Footer"
+import Home from "~/pages/Home"
 
 class App extends Component {
   static propTypes = {
@@ -16,10 +16,6 @@ class App extends Component {
     media: mediaObjectShape
   }
 
-  state = {
-    isLoading: true
-  }
-
   getChildContext() {
     return {
       media: this.props.breakpoints
@@ -27,29 +23,25 @@ class App extends Component {
   }
 
   render() {
-    const { isLoading } = this.state;
-    setTimeout(() => this.setState({ isLoading: false }), 2000)
-    return isLoading ? this.renderLoader() : this.renderApp()
+    return this.renderApp();
   }
 
   renderApp = () => (
     <Fragment>
       <Header>
-        <i className="fab fa-aws" />
+        <Link to="/">
+          <span className="devicons devicons-linux"></span>
+        </Link>
       </Header>
       <Main>
-        <h1>Here be content</h1>
+        <Switch>
+          <Route path="/" exact component={Home} />
+        </Switch>
       </Main>
       <Footer>
-        <h3>Here is the footer</h3>
+        <h3 style={{ textAlign: "right", width: "100%" }}>Here be footer</h3>
       </Footer>
     </Fragment>
-  )
-
-  renderLoader = () => (
-    <Portal>
-      <Loader />
-    </Portal>
   )
 }
 

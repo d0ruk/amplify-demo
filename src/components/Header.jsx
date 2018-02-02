@@ -8,8 +8,7 @@ const Component = styled.header`
   justify-content: flex-end;
   padding: 1rem;
   height: 10vh;
-  font-family: "Supermercado One", cursive;
-  font-size: 5rem;
+  font-size: 3rem;
   ${p => p.media.lg`background: mediumseagreen;`}
 `;
 

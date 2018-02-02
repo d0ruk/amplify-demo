@@ -27,29 +27,37 @@
   "dependencies": {
     "aws-amplify": "^0.1.x",
     "aws-amplify-react": "^0.1.31",
+    "lodash": "^4.17.4",
+    "polished": "^1.9.0",
     "prop-types": "^15.6.0",
+    "query-string": "^5.0.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-portal": "^4.1.2",
-    "styled-components": "^3.0.2"
+    "react-router-dom": "^4.2.2",
+    "styled-components": "^3.0.2",
+    "urql": "0.0.8"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.38",
     "@babel/plugin-proposal-class-properties": "^7.0.0-beta.38",
-    "@babel/runtime": "^7.0.0-beta.38",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.38",
+    "@babel/plugin-syntax-async-generators": "^7.0.0-beta.39",
     "@babel/plugin-transform-runtime": "^7.0.0-beta.38",
     "@babel/preset-env": "^7.0.0-beta.38",
     "@babel/preset-react": "^7.0.0-beta.38",
+    "@babel/runtime": "^7.0.0-beta.38",
     "babel-eslint": "^8.2.1",
     "babel-loader": "^8.0.0-beta.0",
     "clean-webpack-plugin": "^0.1.17",
+    "css-loader": "^0.28.9",
     "eslint": "^4.16.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.5.1",
     "html-webpack-plugin": "^2.30.1",
-    "uglifyjs-webpack-plugin": "^1.1.6",
+    "style-loader": "^0.20.1",
+    "uglifyjs-webpack-plugin": "^1.1.8",
     "webpack": "^3.10.0",
-    "webpack-dev-server": "^2.11.1",
-    "webpack-jarvis": "^0.2.2"
+    "webpack-dev-server": "^2.11.1"
   }
 }
