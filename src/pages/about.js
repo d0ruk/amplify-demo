@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Section, Paragraph, H2 } from "../components";
+import { Section, Paragraph, H2 } from "components";
 
 const About = () => (
   <Section>

@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Section, H2 } from "../components";
+import { Section, H2 } from "components";
 
 const Home = () => (
   <Section>
