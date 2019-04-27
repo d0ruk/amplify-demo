@@ -9,6 +9,11 @@
             "UnauthRoleName": "amplify-demo-20190325030541-unauthRole",
             "StackName": "amplify-demo-20190325030541",
             "StackId": "arn:aws:cloudformation:eu-west-1:221409945873:stack/amplify-demo-20190325030541/cd9ccaa0-4e91-11e9-9912-0ac6bcaf6240"
+        },
+        "categories": {
+            "auth": {
+                "cognitof2f92383": {}
+            }
         }
     }
 }
