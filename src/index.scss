@@ -6,6 +6,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
 }
 
 code {
@@ -16,4 +17,11 @@ code {
 a {
   font-weight: bold;
   text-decoration: none;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: var(--ion-color-light);
 }
