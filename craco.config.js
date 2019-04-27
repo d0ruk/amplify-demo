@@ -17,9 +17,7 @@ module.exports = function({ env, paths }) {
         whenDev(() => new Jarvis({ port: 1337 }))
       ].filter(Boolean),
       alias: {
-        "~": path.join(__dirname, "src"),
-        components: path.join(__dirname, "src", "components"),
-        pages: path.join(__dirname, "src", "pages")
+        "~": path.join(__dirname, "src")
       }
     },
     plugins: [{ plugin: require("craco-plugin-react-hot-reload") }]
