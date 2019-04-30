@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import { Nav, Ul, Li } from "components";
+import { Nav, Ul, Li } from "~/components";
 
 const NavBar = ({ routes = [] }) => (
   <Nav>
