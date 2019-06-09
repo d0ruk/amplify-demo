@@ -264,7 +264,7 @@ Resources:
             - ' }'
             - '};'
       Handler: index.handler
-      Runtime: nodejs6.10
+      Runtime: nodejs8.10
       Timeout: '300'
       Role: !GetAtt 
         - UserPoolClientRole
@@ -380,9 +380,3 @@ Outputs :
     Description: The user pool app client id
   AppClientSecret:
     Value: !GetAtt UserPoolClientInputs.appSecret
-  
-   
-   
-  
-   
-  
