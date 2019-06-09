@@ -4,4 +4,6 @@
 
 - `git clone  https://github.com/d0ruk/amplify-demo.git && cd amplify-demo`
 
-- `yarn && amplify push && npm start`
+- `amplify env add`
+
+- `amplify publish`
